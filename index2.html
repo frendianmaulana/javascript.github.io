@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.rtl.css">
+    <title>Document</title>
+</head>
+<script>
+    function func(){
+        alert("Hai");
+        var nama = prompt("Masukkan Nama Anda:","Test");
+        let nah = "Apakah anda yakin?";
+        if(confirm(nah)==true)
+        {
+            nah = alert("Berhasil");
+            document.getElementById("result").innerHTML = "Nama: "+nama;
+        }
+        else
+        {
+            nah = alert("Gagal/Tidak Terjadi apa2");
+            document.getElementById("result").innerHTML = "Nothing";
+        }
+    }
+</script>
+<body>
+    <div class="container">        
+        <button type="button" name="tombol" onclick="func()" class="btn btn-outline-dark">Try it</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
